@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code converter</title>
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+  <script src="https://kit.fontawesome.com/a7d726446d.js" crossorigin="anonymous"></script>
+</head>
+<header>
+  <div>
+    <button class="signin">user0000000001</button>
+    <h1 class="code">Code Translator</h1>
+  </div>
+</header>
+<body>
+  <main>
+    <div class="form-group">
+      <label for="source-code">Source Code</label>
+      <button class="savedprgms"><a href="savedprgmsmain.html" target="_blank">SOME OF SAVED PROGRAMS</a></button>
+      <textarea id="source-code" placeholder="Enter your code here"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="target-language">Target Language</label>
+      <select id="target-language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="PHP">PHP</option>
+        <option value="JAVA">JAVA</option>
+        <!-- Add more language options as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <button id="translate-button">Convert</button>
+    </div>
+    <div class="form-group">
+      <label for="translated-code">Converted Code</label>
+      <textarea id="translated-code" readonly></textarea>
+    </div>
+  </main>
+  <script src="code.js"></script>
+  
+</body>
+</html>
+
+
+
+

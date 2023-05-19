@@ -1,0 +1,61 @@
+body{
+  background-color: #344a72;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.login-box{
+   width: 300px;
+   height: 300px;
+   margin:auto;
+   background-color: white;
+   border-radius: 3px;
+
+}
+h1{
+  text-align: center;
+  padding-top: 15px;
+}
+form{
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 200px;
+}
+form label{
+  display: flex;
+  margin-top: 25px;
+  font-size: 18px;
+}
+form input{
+  width: 250px;
+  padding: 6px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+button{
+  width: 270px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+}
+p{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+
+}
+.para-2{
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: -10px;
+
+}
+.para-2 a{
+  color: #49c1a2;
+  
+}
