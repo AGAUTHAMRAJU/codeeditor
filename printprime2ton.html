@@ -126,44 +126,9 @@
               } else if (selectedLanguage === 'js' && selectedExecutionType === 'n') {
                 message = "const n = 10; \nconsole.log(Array.from({length: n-1}, (_, i) => i+2).filter(x => ![...Array(x-2)].map((_, i) => i+2).some(i => x % i === 0)).join(' '));";
               } else if (selectedLanguage === 'c' && selectedExecutionType === '1') {
-                message=`  #include <stdio.h>\n
-                  #include <stdbool.h>\n
-                  int main() {\n
-                    int n = 10;\n
-                    bool isPrime;\n
-                    for (int i = 2; i <= n; i++) {\n
-                      isPrime = true;\n
-                      for (int j = 2; j * j <= i; j++) {\n
-                        if (i % j == 0) {\n
-                          isPrime = false;\n
-                          break;\n
-                        }\n
-                      }\n
-                      if (isPrime)\n
-                        printf("%d ", i);\n
-                    }\n
-                    return 0;\n
-                  }`;
-                  
+                message=`#include &ltstdio.h&gt\n#include &ltstdbool.h&gt\nint main() {\nint n = 10;\nbool isPrime;\nfor (int i = 2; i <= n; i++) {\nisPrime = true;\nfor (int j = 2; j * j <= i; j++) {\nif (i % j == 0) {\nisPrime = false;\n break;\n}\n}\nif (isPrime)\nprintf("%d ", i);\n }\nreturn 0;\n}`;
               } else if (selectedLanguage === 'c' && selectedExecutionType === 'n') {
-                message=`  #include <stdio.h>\n
-                  #include <stdbool.h>\n
-                  int main() {\n
-                    int n = 10;\n
-                    bool isPrime;\n
-                    for (int i = 2; i <= n; i++) {\n
-                      isPrime = true;\n
-                      for (int j = 2; j * j <= i; j++) {\n
-                        if (i % j == 0) {\n
-                          isPrime = false;\n
-                          break;\n
-                        }\n
-                      }\n
-                      if (isPrime)\n
-                        printf("%d ", i);\n
-                    }\n
-                    return 0;\n
-                  }\n`;
+                message=`  #include &ltstdio.h&gt\n#include &ltstdbool.h&gt\nint main() {\nint n = 10;\nbool isPrime;\nfor (int i = 2; i <= n; i++) {\nisPrime = true;\nfor (int j = 2; j * j <= i; j++) {\nif (i % j == 0) {\nisPrime = false;\nbreak;\n}\n}\nif (isPrime)\nprintf("%d ", i);\n}\nreturn 0;\n}\n`;
               } else {
                 message = 'See you soon';
               }
